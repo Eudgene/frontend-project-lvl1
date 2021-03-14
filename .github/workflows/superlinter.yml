@@ -23,3 +23,7 @@ jobs:
         env:
           DEFAULT_BRANCH: main
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+  
+      - name: Run lint
+        run: make lint
+        shell: bash
