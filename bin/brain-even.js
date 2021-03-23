@@ -1,6 +1,6 @@
-import readlineSync from 'readline-sync';
+#!/usr/bin/env node
 
-const name = readlineSync.question('May I have your name? ');
-export default name;
+import name from 'take-name-of-user.js';
+
 console.log('Welcome to the Brain Games!');
 console.log(`Hi, ${name}!`);
