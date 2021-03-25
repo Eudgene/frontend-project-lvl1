@@ -8,7 +8,7 @@ export function isNumberIsEven(randomnumber) {
   if(randomnumber % 2 === 0) {
     return 'yes';
   } else {
-    return 'yes';
+    return 'no';
   }
 }
 
