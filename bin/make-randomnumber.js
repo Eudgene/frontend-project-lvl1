@@ -3,11 +3,13 @@ import { randomnumber } from './brain-even.js';
 function getRandomInt(max) {
   return Math.floor(Math.random() * Math.floor(max));
 };
+const numberYesNo;
 function isNumberIsEven(randomnumber) {
   if(randomnumber%2 === 0) {
-    return 'yes';
+    numberYesNo = 'yes';
   }
-  return 'no';
+  numberYesNo = 'no';
+  return numberYesNo;
 }
 console.log(isNumberIsEven());
 
