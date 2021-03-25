@@ -4,13 +4,12 @@ function getRandomInt(max) {
   return Math.floor(Math.random() * Math.floor(max));
 };
 
-export let numberYesNo;
 export function isNumberIsEven(randomnumber) {
   if(randomnumber % 2 === 0) {
-    numberYesNo = 'yes';
+    return 'yes';
+  } else {
+    return 'yes';
   }
-  numberYesNo = 'no';
-  return numberYesNo;
 }
 
 export default getRandomInt;
