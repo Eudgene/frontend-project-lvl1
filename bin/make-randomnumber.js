@@ -9,4 +9,4 @@ function isNumberIsEven(number) {
   return 'no';
 }
 
-export default {getRandomInt, isNumberIsEven};
+export default { getRandomInt, isNumberIsEven };
