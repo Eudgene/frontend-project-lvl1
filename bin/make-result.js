@@ -7,7 +7,7 @@ export function makeResult() {
     const randomnumber = getRandomInt(100);
     const answer = readlineSync.question(`Question: ${randomnumber}\nYour answer: `);
     
-    if(answer === isNumberIsEven(randomnumber) && counter <= 2) {
+    if(answer === isNumberIsEven(randomnumber) && counter < 2) {
       console.log('Correct!');
       counter += 1;
       console.log(counter);
