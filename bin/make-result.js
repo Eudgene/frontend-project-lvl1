@@ -1,7 +1,7 @@
 import readlineSync from 'readline-sync';
 import getRandomInt from './make-randomnumber.js';
 import {isNumberIsEven} from './make-randomnumber.js';
-import {name} from './brain-even.js';
+import name from './brain-even.js';
 
 let counter = 0;
 export function makeResult() {
