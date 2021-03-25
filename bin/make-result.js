@@ -6,9 +6,10 @@ export function makeResult() {
     const randomnumber = getRandomInt(100);
     const answer = readlineSync.question(`Question: ${randomnumber}\nYour answer: `);
     let counter = 0;
-    if(answer === isNumberIsEven(randomnumber) && counter !== 3) {
+    if(answer === isNumberIsEven(randomnumber) && counter < 3) {
       console.log('Correct!');
       counter += 1;
+      console.log(counter);
       makeResult();
     } else {
       console.log(`"${answer}" is wrong answer ;(. Correct answer was ${answer === 'yes' ? '"no"' : '"yes"'}.\nLet's try again, ${name}!`);
