@@ -2,10 +2,11 @@ import readlineSync from 'readline-sync';
 import getRandomInt from './make-randomnumber.js';
 import {isNumberIsEven} from './make-randomnumber.js';
 
+let counter = 0;
 export function makeResult() {
     const randomnumber = getRandomInt(100);
     const answer = readlineSync.question(`Question: ${randomnumber}\nYour answer: `);
-    let counter = 0;
+    
     if(answer === isNumberIsEven(randomnumber) && counter < 3) {
       console.log('Correct!');
       counter += 1;
