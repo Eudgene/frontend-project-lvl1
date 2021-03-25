@@ -15,7 +15,7 @@ const answer = readlineSync.question(`Question: ${randomnumber}\nYour answer: `)
 
 if(answer === isNumberIsEven(randomnumber)) {
   console.log('Correct!')
-  //const answer = readlineSync.question(`Question: ${randomnumber}\nYour answer: `);
+  const answer = readlineSync.question(`Question: ${randomnumber}\nYour answer: `);
 } else {
   console.log(`"${answer}" is wrong answer ;(. Correct answer was ${answer === 'yes' ? '"no"' : '"yes"'}.\nLet's try again, ${name}!`);
 }
