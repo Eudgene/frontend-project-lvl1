@@ -11,7 +11,6 @@ export function makeResult() {
     if(answer === isNumberIsEven(randomnumber) && counter < 2) {
       console.log('Correct!');
       counter += 1;
-      console.log(counter);
       makeResult();
     } else if(answer === isNumberIsEven(randomnumber) && counter === 2){
       console.log(`Correct! \nCongratulations, ${name}!`); 
