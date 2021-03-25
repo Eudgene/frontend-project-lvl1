@@ -2,7 +2,7 @@
 
 import readlineSync from 'readline-sync';
 import getRandomInt from './make-randomnumber.js';
-import numberYesNo from './make-randomnumber.js';
+import {numberYesNo, isNumberIsEven} from './make-randomnumber.js';
 
 console.log('Welcome to the Brain Games!');
 

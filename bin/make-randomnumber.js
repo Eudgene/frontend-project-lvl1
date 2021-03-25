@@ -5,7 +5,7 @@ function getRandomInt(max) {
 };
 
 export let numberYesNo;
-function isNumberIsEven(randomnumber) {
+export function isNumberIsEven(randomnumber) {
   if(randomnumber % 2 === 0) {
     numberYesNo = 'yes';
   }
