@@ -15,7 +15,11 @@ export function makeResult() {
     } else if(answer === isNumberIsEven(randomnumber) && counter === 2){
       console.log(`Correct! \nCongratulations, ${name}!`); 
     } else {
-      console.log(`"${answer}" is wrong answer ;(. Correct answer was ${answer === 'yes' ? '"no"' : '"yes"'}.\nLet's try again, ${name}!`);
+      if (answer === 'yes' || answer === 'no') {
+        console.log(`"${answer}" is wrong answer ;(. Correct answer was ${answer === 'yes' ? '"no"' : '"yes"'}.\nLet's try again, ${name}!`);
+      } else {
+        console.log(`"${answer}" is wrong answer ;(. Correct answer was ${isNumberIsEven(randomnumber) === 'yes' ? '"no"' : '"yes"'}.\nLet's try again, ${name}!`); 
+      }
     }
 }
 
