@@ -15,8 +15,9 @@ function makeResult() {
   } else {
     if (answer === 'yes' || answer === 'no') {
       console.log(`"${answer}" is wrong answer ;(. Correct answer was ${answer === 'yes' ? '"no"' : '"yes"'}.\nLet's try again, ${name}!`);
+    } else {
+      console.log(`"${answer}" is wrong answer ;(. Correct answer was ${isNumberIsEven(randomnumber) === 'yes' ? '"no"' : '"yes"'}.\nLet's try again, ${name}!`);
     }
-    console.log(`"${answer}" is wrong answer ;(. Correct answer was ${isNumberIsEven(randomnumber) === 'yes' ? '"no"' : '"yes"'}.\nLet's try again, ${name}!`);
   }
 }
 
