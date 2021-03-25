@@ -1,5 +1,5 @@
 import readlineSync from 'readline-sync';
-import { isNumberIsEven, getRandomInt } from './make-randomnumber.js';
+import { getRandomInt, isNumberIsEven } from './make-randomnumber.js';
 import name from './brain-even.js';
 
 let counter = 0;
