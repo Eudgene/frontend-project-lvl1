@@ -14,8 +14,10 @@ const randomnumber = getRandomInt(100);
 const answer = readlineSync.question(`Question: ${randomnumber}\nYour answer: `);
 
 if(answer === numberYesNo) {
-
+  console.log('Correct!')
+  //const answer = readlineSync.question(`Question: ${randomnumber}\nYour answer: `);
+} else {
+  console.log(`${answer} is wrong answer ;(. Correct answer was 'no'.\nLet's try again, ${name}!`);
 }
-console.log(`${answer} is wrong answer ;(. Correct answer was 'no'.\nLet's try again, ${name}!`);
 
 export {randomnumber, answer};
