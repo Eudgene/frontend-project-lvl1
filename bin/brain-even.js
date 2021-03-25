@@ -12,7 +12,7 @@ console.log(`Hi, ${name}!`);
 console.log('Answer "yes" if the number is even, otherwise answer "no".');
 const randomnumber = getRandomInt(100);
 const answer = readlineSync.question(`Question: ${randomnumber}\nYour answer: `);
-
+isNumberIsEven(randomnumber);
 if(answer === numberYesNo) {
   console.log('Correct!')
   //const answer = readlineSync.question(`Question: ${randomnumber}\nYour answer: `);
