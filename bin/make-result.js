@@ -13,6 +13,8 @@ export function makeResult() {
       counter += 1;
       console.log(counter);
       makeResult();
+    } else if(answer === isNumberIsEven(randomnumber) && counter === 2){
+      console.log(`Correct! \nCongratulations, ${name}!`); 
     } else {
       console.log(`"${answer}" is wrong answer ;(. Correct answer was ${answer === 'yes' ? '"no"' : '"yes"'}.\nLet's try again, ${name}!`);
     }
