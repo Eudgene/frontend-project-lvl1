@@ -11,4 +11,4 @@ console.log(`Hi, ${name}!`);
 console.log('Answer "yes" if the number is even, otherwise answer "no".');
 makeResult();
 
-export default name;
+export { name };
