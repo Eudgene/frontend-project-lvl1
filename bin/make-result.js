@@ -17,4 +17,4 @@ function makeResult() {
   }
 }
 
-export { makeResult };
+export default makeResult;

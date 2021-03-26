@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 
 import readlineSync from 'readline-sync';
-import { makeResult } from './make-result.js';
+import makeResult from './make-result.js';
 
 console.log('Welcome to the Brain Games!');
 
