@@ -2,7 +2,7 @@ import readlineSync from 'readline-sync';
 import { getRandomInt, isNumberIsEven } from './make-randomnumber.js';
 import * as name from './brain-even.js';
 
-let counter = 0;
+/*let counter = 0;
 function makeResult() {
   const randomnumber = getRandomInt(100);
   const answer = readlineSync.question(`Question: ${randomnumber}\nYour answer: `);
@@ -17,4 +17,4 @@ function makeResult() {
   }
 }
 
-export default makeResult;
+export default makeResult;*/
