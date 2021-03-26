@@ -1,7 +1,7 @@
 #!/usr/bin/env node
-import { getRandomInt, isNumberIsEven } from './make-randomnumber.js';
+
 import readlineSync from 'readline-sync';
-//import makeResult from './make-result.js';
+import { getRandomInt, isNumberIsEven } from './make-randomnumber.js';
 
 console.log('Welcome to the Brain Games!');
 
@@ -9,9 +9,7 @@ const name = readlineSync.question('May I have your name? ');
 console.log(`Hi, ${name}!`);
 
 console.log('Answer "yes" if the number is even, otherwise answer "no".');
-//makeResult();
 
-//export default name;
 let counter = 0;
 function makeResult() {
   const randomnumber = getRandomInt(100);
