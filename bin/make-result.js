@@ -13,7 +13,7 @@ function makeResult() {
   } else if (answer === isNumberIsEven(randomnumber) && counter === 2) {
     console.log(`Correct! \nCongratulations, ${name}!`);
   } else {
-    console.log(`"${answer}" is wrong answer ;(. Correct answer was ${isNumberIsEven(randomnumber) === 'yes' ? '"no"' : '"yes"'}.\nLet's try again, ${name}!`);
+    console.log(`"${answer}" is wrong answer ;(. Correct answer was ${isNumberIsEven(randomnumber)}.\nLet's try again, ${name}!`);
   }
 }
 
