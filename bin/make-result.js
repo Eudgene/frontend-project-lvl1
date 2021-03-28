@@ -1,4 +1,3 @@
-import { isNumberIsEven } from './make-randomnumber.js';
 import { name } from './brain-even.js';
 
 function makeResult(number, ans, count) {

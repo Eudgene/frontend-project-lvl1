@@ -15,5 +15,6 @@ let counter = 0;
 const randomnumber = getRandomInt(100);
 const ynanswer = isNumberIsEven(randomnumber);
 const answer = readlineSync.question(`Question: ${randomnumber}\nYour answer: `);
+console.log(answer, ynanswer);
 makeResult(ynanswer, answer, counter);
 
