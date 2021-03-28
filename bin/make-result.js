@@ -2,7 +2,6 @@ import readlineSync from 'readline-sync';
 import { name } from './brain-even.js';
 import { getRandomInt, isNumberIsEven } from './make-randomnumber.js';
 
-
 function makeResult() {
   const randomnumber = getRandomInt(100);
   const ynanswer = isNumberIsEven(randomnumber);
