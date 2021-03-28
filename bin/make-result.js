@@ -12,7 +12,6 @@ function makeResult() {
   } else {
     console.log(`"${answer}" is wrong answer ;(. Correct answer was "${ynanswer}".\nLet's try again, ${name}!`);
   }
-  return result;
 }
 
 export default makeResult;
