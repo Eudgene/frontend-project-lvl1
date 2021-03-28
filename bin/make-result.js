@@ -1,3 +1,4 @@
+import readlineSync from 'readline-sync';
 import { name } from './brain-even.js';
 import { getRandomInt, isNumberIsEven } from './make-randomnumber.js';
 
