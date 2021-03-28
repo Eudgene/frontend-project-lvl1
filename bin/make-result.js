@@ -1,4 +1,4 @@
-import name from './brain-even.js';
+import { name } from './brain-even.js';
 import { getRandomInt, isNumberIsEven } from './make-randomnumber.js';
 
 
