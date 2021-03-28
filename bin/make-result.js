@@ -1,15 +1,17 @@
-import { name } from './brain-even.js';
+import name from './brain-even.js';
+import { getRandomInt, isNumberIsEven } from './make-randomnumber.js';
 
-function makeResult(number, ans, count) {
-    if (ans === number && count < 2) {
-      console.log('Correct!');
-      count += 1;
-      makeResult();
-    } else if (ans === number && count === 2) {
-      console.log(`Correct! \nCongratulations, ${name}!`);
-    } else {
-      console.log(`"${ans}" is wrong answer ;(. Correct answer was "${number}".\nLet's try again, ${name}!`);
-    }
+
+function makeResult() {
+  const randomnumber = getRandomInt(100);
+  const ynanswer = isNumberIsEven(randomnumber);
+  const answer = readlineSync.question(`Question: ${randomnumber}\nYour answer: `);
+  if (answer === ynanswer) {
+    console.log('Correct!');
+  } else {
+    console.log(`"${answer}" is wrong answer ;(. Correct answer was "${ynanswer}".\nLet's try again, ${name}!`);
   }
+  return result;
+}
 
 export default makeResult;

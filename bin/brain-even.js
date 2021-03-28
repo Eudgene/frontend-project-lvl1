@@ -1,7 +1,6 @@
 #!/usr/bin/env node
 
 import readlineSync from 'readline-sync';
-import { getRandomInt, isNumberIsEven } from './make-randomnumber.js';
 import makeResult from './make-result.js';
 
 console.log('Welcome to the Brain Games!');
@@ -12,9 +11,11 @@ console.log(`Hi, ${name}!`);
 console.log('Answer "yes" if the number is even, otherwise answer "no".');
 
 let counter = 0;
-const randomnumber = getRandomInt(100);
-const ynanswer = isNumberIsEven(randomnumber);
-const answer = readlineSync.question(`Question: ${randomnumber}\nYour answer: `);
-console.log(answer, ynanswer);
-makeResult(ynanswer, answer, counter);
+if (counter < 2) {
+  counter += 1;
+  makeResult();
+} else {
+  makeResult();
+  console.log(`Congratulations, ${name}!`);
+}
 
