@@ -4,7 +4,7 @@ import { name } from './brain-even.js';
 function makeResult(number, ans, count) {
     if (ans === isNumberIsEven(number) && count < 2) {
       console.log('Correct!');
-      counter += 1;
+      count += 1;
       makeResult();
     } else if (ans === isNumberIsEven(number) && count === 2) {
       console.log(`Correct! \nCongratulations, ${name}!`);
