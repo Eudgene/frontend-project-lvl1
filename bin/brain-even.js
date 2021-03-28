@@ -13,6 +13,7 @@ console.log('Answer "yes" if the number is even, otherwise answer "no".');
 
 let counter = 0;
 const randomnumber = getRandomInt(100);
+const ynanswer = isNumberIsEven(randomnumber);
 const answer = readlineSync.question(`Question: ${randomnumber}\nYour answer: `);
-makeResult(randomnumber, answer, counter);
+makeResult(ynanswer, answer, counter);
 
