@@ -1,13 +1,11 @@
 #!/usr/bin/env node
 
-import readlineSync from 'readline-sync';
 import makeResult from './make-result.js';
+import name from './get-name.js';
+
 
 console.log('Welcome to the Brain Games!');
 
-function name() {
-  return readlineSync.question('May I have your name? ');
-}
 console.log(`Hi, ${name()}!`);
 
 console.log('Answer "yes" if the number is even, otherwise answer "no".');
@@ -18,6 +16,4 @@ while (counter < 2) {
   makeResult();
 }
 makeResult();
-console.log(`Congratulations, ${name}!`);
-
-export default name;
+console.log(`Congratulations, ${name()}!`);
