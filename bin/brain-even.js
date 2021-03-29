@@ -6,7 +6,7 @@ import makeResult from './make-result.js';
 console.log('Welcome to the Brain Games!');
 
 function name() {
-  readlineSync.question('May I have your name? ');
+  return readlineSync.question('May I have your name? ');
 }
 console.log(`Hi, ${name()}!`);
 
