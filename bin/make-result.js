@@ -2,7 +2,6 @@ import readlineSync from 'readline-sync';
 import { nameOfUser } from './get-name.js';
 import { getRandomInt, isNumberIsEven } from './make-randomnumber.js';
 
-const name = nameOfUser();
 function makeResult() {
   const randomnumber = getRandomInt(100);
   const ynanswer = isNumberIsEven(randomnumber);
