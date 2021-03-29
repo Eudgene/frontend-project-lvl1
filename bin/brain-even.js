@@ -4,9 +4,7 @@ import makeResult from './make-result.js';
 import nameOfUser from './get-name.js';
 
 console.log('Welcome to the Brain Games!');
-console.log(nameOfUser());
 console.log(`Hi, ${nameOfUser()}!`);
-
 console.log('Answer "yes" if the number is even, otherwise answer "no".');
 
 let counter = 0;
