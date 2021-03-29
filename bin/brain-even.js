@@ -1,9 +1,9 @@
 #!/usr/bin/env node
 
 import makeResult from './make-result.js';
-import { nameOfUser } from './get-name.js';
+import trees from './get-name.js';
 
-
+const { nameOfUser } = trees;
 console.log('Welcome to the Brain Games!');
 
 console.log(`Hi, ${nameOfUser()}!`);
