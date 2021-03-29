@@ -1,5 +1,5 @@
 import readlineSync from 'readline-sync';
-import name from './brain-even.js';
+import nameOfUser from './brain-even.js';
 import { getRandomInt, isNumberIsEven } from './make-randomnumber.js';
 
 function makeResult() {
@@ -9,7 +9,7 @@ function makeResult() {
   if (answer === ynanswer) {
     console.log('Correct!');
   } else {
-    console.log(`"${answer}" is wrong answer ;(. Correct answer was "${ynanswer}".\nLet's try again, ${name()}!`);
+    console.log(`"${answer}" is wrong answer ;(. Correct answer was "${ynanswer}".\nLet's try again, ${nameOfUser()}!`);
   }
 }
 

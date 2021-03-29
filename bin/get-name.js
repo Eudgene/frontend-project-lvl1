@@ -1,7 +1,7 @@
 import readlineSync from 'readline-sync';
 
-function name() {
+function nameOfUser() {
   return readlineSync.question('May I have your name? ');
 }
 
-export default name;
+export default nameOfUser;
