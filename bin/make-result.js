@@ -1,7 +1,8 @@
 import readlineSync from 'readline-sync';
-import nameOfUser from './brain-even.js';
+import trees from './get-name.js';
 import { getRandomInt, isNumberIsEven } from './make-randomnumber.js';
 
+const { nameOfUser } = trees;
 function makeResult() {
   const randomnumber = getRandomInt(100);
   const ynanswer = isNumberIsEven(randomnumber);
