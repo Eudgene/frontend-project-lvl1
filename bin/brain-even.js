@@ -5,7 +5,7 @@ import * as name from './get-name.js';
 
 console.log('Welcome to the Brain Games!');
 
-console.log(`Hi, ${name.nameOfUser()}!`);
+console.log(`Hi, ${name.nameOfUser}!`);
 
 console.log('Answer "yes" if the number is even, otherwise answer "no".');
 
@@ -15,4 +15,4 @@ while (counter < 2) {
   makeResult();
 }
 makeResult();
-console.log(`Congratulations, ${name.nameOfUser()}!`);
+console.log(`Congratulations, ${name.nameOfUser}!`);
