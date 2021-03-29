@@ -1,12 +1,11 @@
 #!/usr/bin/env node
 
 import makeResult from './make-result.js';
-import trees from './get-name.js';
+import * as name from './get-name.js';
 
-const { nameOfUser } = trees;
 console.log('Welcome to the Brain Games!');
 
-console.log(`Hi, ${nameOfUser}!`);
+console.log(`Hi, ${name.nameOfUser()}!`);
 
 console.log('Answer "yes" if the number is even, otherwise answer "no".');
 
@@ -16,4 +15,4 @@ while (counter < 2) {
   makeResult();
 }
 makeResult();
-console.log(`Congratulations, ${nameOfUser}!`);
+console.log(`Congratulations, ${name.nameOfUser()}!`);
