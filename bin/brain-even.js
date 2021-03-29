@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 
 import makeResult from './make-result.js';
-import nameOfUser from './get-name.js';
+import { nameOfUser } from './get-name.js';
 
 
 console.log('Welcome to the Brain Games!');

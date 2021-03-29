@@ -4,4 +4,4 @@ function nameOfUser() {
   return readlineSync.question('May I have your name? ');
 }
 
-export default nameOfUser;
+export { nameOfUser };
