@@ -9,8 +9,7 @@ function makeResult() {
   if (answer === ynanswer) {
     console.log('Correct!');
   } else {
-    break;
-    /*console.log(`"${answer}" is wrong answer ;(. Correct answer was "${ynanswer}".\nLet's try again, !`);*/
+    console.log(`"${answer}" is wrong answer ;(. Correct answer was "${ynanswer}".\nLet's try again, !`);
   }
 }
 
