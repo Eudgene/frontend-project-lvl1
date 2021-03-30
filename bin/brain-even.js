@@ -9,11 +9,10 @@ console.log(`Hi, ${nameOfUser}!`);
 
 console.log('Answer "yes" if the number is even, otherwise answer "no".');
 
-let counter = 0;
-if (counter < 2) {
-  counter += 1;
-  makeResult();
-} else if (counter === 2) {
-  console.log(`Congratulations, ${nameOfUser}!`);
+for (let counter = 0; counter <= 2; counter += 1) {
+  if (counter < 2) {
+    makeResult();
+  } else if (counter === 2) {
+    console.log(`Congratulations, ${nameOfUser}!`);
+  }
 }
-
