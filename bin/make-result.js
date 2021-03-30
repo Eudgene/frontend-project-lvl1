@@ -1,5 +1,5 @@
 import readlineSync from 'readline-sync';
-import { nameOfUser } from './get-name.js';
+import nameOfUser from './get-name.js';
 import { getRandomInt, isNumberIsEven } from './make-randomnumber.js';
 
 function makeResult() {
