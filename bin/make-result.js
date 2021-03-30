@@ -1,7 +1,8 @@
 import readlineSync from 'readline-sync';
-import nameOfUser from './get-name.js';
+import getnameOfUser from './get-name.js';
 import { getRandomInt, isNumberIsEven } from './make-randomnumber.js';
 
+const nameOfUser = getnameOfUser();
 function makeResult() {
   const randomnumber = getRandomInt(100);
   const ynanswer = isNumberIsEven(randomnumber);
@@ -9,7 +10,8 @@ function makeResult() {
   if (answer === ynanswer) {
     console.log('Correct!');
   } else {
-    console.log(`"${answer}" is wrong answer ;(. Correct answer was "${ynanswer}".\nLet's try again, ${nameOfUser()}!`);
+    console.log(`"${answer}" is wrong answer ;(. Correct answer was "${ynanswer}".\nLet's try again, ${nameOfUser}!`);
+    break;
   }
 }
 
