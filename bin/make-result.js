@@ -1,8 +1,8 @@
 import readlineSync from 'readline-sync';
-import getnameOfUser from './get-name.js';
+//import getnameOfUser from './get-name.js';
 import { getRandomInt, isNumberIsEven } from './make-randomnumber.js';
 
-const nameOfUser = getnameOfUser();
+//const nameOfUser = getnameOfUser();
 let counter = 0;
 function makeResult() {
   const randomnumber = getRandomInt(100);
