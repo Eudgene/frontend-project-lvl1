@@ -9,7 +9,6 @@ function makeResult() {
   const answer = readlineSync.question(`Question: ${randomnumber}\nYour answer: `);
   if (answer === ynanswer) {
     console.log('Correct!');
-    makeResult();
   } else {
     const nameOfUser = getnameOfUser();
     console.log(`"${answer}" is wrong answer ;(. Correct answer was "${ynanswer}".\nLet's try again, ${nameOfUser}!`);
