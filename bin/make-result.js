@@ -1,7 +1,6 @@
 import readlineSync from 'readline-sync';
 import { getRandomInt, isNumberIsEven } from './make-randomnumber.js';
 
-
 function makeResult() {
   const randomnumber = getRandomInt(100);
   const ynanswer = isNumberIsEven(randomnumber);
@@ -9,10 +8,9 @@ function makeResult() {
   if (answer === ynanswer) {
     console.log('Correct!');
     return true;
-  } else {
-    console.log(`"${answer}" is wrong answer ;(. Correct answer was "${ynanswer}".`);
-    return false;
   }
+  console.log(`"${answer}" is wrong answer ;(. Correct answer was "${ynanswer}".`);
+  return false;
 }
 
 export default makeResult;
