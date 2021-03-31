@@ -10,7 +10,7 @@ function makeResult() {
     console.log('Correct!');
     return true;
   } else {
-    //console.log(`"${answer}" is wrong answer ;(. Correct answer was "${ynanswer}".\nLet's try again, !`);
+    console.log(`"${answer}" is wrong answer ;(. Correct answer was "${ynanswer}".\nLet's try again, !`);
     return false;
   }
 }
