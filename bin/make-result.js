@@ -8,8 +8,9 @@ function makeResult() {
   const answer = readlineSync.question(`Question: ${randomnumber}\nYour answer: `);
   if (answer === ynanswer) {
     console.log('Correct!');
+    return true;
   } else {
-    console.log(`"${answer}" is wrong answer ;(. Correct answer was "${ynanswer}".\nLet's try again, !`);
+    //console.log(`"${answer}" is wrong answer ;(. Correct answer was "${ynanswer}".\nLet's try again, !`);
     return false;
   }
 }
