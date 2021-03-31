@@ -12,6 +12,7 @@ console.log('Answer "yes" if the number is even, otherwise answer "no".');
 for (let counter = 0; counter <= 3; counter += 1) {
   if (counter < 3) {
     if(makeResult() === false){
+      console.log(`Let's try again, ${nameOfUser}!`)
       break;
     };
   } else if (counter === 3) {
