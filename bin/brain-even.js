@@ -14,5 +14,7 @@ for (let counter = 0; counter <= 3; counter += 1) {
     makeResult();
   } else if (counter === 3) {
     console.log(`Congratulations, ${nameOfUser}!`);
+  } else if (makeResult() === false) {
+    break;
   }
 }
