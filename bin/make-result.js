@@ -13,8 +13,8 @@ function makeResult() {
   return false;
 }
 
+const randomnumber = getRandomInt(100);
 export function makeCalc() {
-  const randomnumber = getRandomInt(100);
   const ynanswer = isNumberIsEven(randomnumber);
   const answer = readlineSync.question(`Question: ${randomnumber} '+' ${randomnumber}\nYour answer: `);
   if (answer === ynanswer) {
