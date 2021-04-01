@@ -3,7 +3,7 @@ function getRandomInt(max) {
 }
 
 function getRandomElement() {
-  var elements = ['+', '-', '*'];
+  const elements = ['+', '-', '*'];
   return elements[Math.floor(Math.random() * elements.length)];
 }
 
@@ -26,4 +26,6 @@ function resultOfExpression(number1, number2, mexpr) {
   return result;
 }
 
-export { getRandomInt, isNumberIsEven, getRandomElement, resultOfExpression};
+export { 
+  getRandomInt, isNumberIsEven, getRandomElement, resultOfExpression 
+};
