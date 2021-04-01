@@ -14,14 +14,14 @@ function isNumberIsEven(number) {
   return 'no';
 }
 
-function resultOfExpression(number1, number1, mexpr) {
+function resultOfExpression(number1, number2, mexpr) {
   let result = 0;
   if (mexpr === '+') {
-    result = number1 + number1;
+    result = number1 + number2;
   } else if (mexpr === '-') {
-    result = number1 - number1;
+    result = number1 - number2;
   } else {
-    result = number1 * number1;
+    result = number1 * number2;
   }
   return result;
 }
