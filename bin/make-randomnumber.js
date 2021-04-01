@@ -14,4 +14,16 @@ function isNumberIsEven(number) {
   return 'no';
 }
 
-export { getRandomInt, isNumberIsEven, getRandomElement };
+function resultOfExpression(number1, number1, mexpr) {
+  let result = 0;
+  if (mexpr === '+') {
+    result = number1 + number1;
+  } else if (mexpr === '-') {
+    result = number1 - number1;
+  } else {
+    result = number1 * number1;
+  }
+  return result;
+}
+
+export { getRandomInt, isNumberIsEven, getRandomElement, resultOfExpression};
