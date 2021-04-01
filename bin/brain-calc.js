@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 
-import makeResult from './make-result.js';
+import { makeCalc } from './make-result.js';
 import getnameOfUser from './get-name.js';
 
 console.log('Welcome to the Brain Games!');
@@ -11,7 +11,7 @@ console.log('What is the result of the expression?');
 
 for (let counter = 0; counter <= 3; counter += 1) {
   if (counter < 3) {
-    if (makeResult() === false) {
+    if (makeCalc() === false) {
       console.log(`Let's try again, ${nameOfUser}!`);
       break;
     }
