@@ -2,7 +2,7 @@ import readlineSync from 'readline-sync';
 import { getRandomInt, isNumberIsEven, getRandomElement, resultOfExpression } from './make-randomnumber.js';
 
 function makeResult() {
-  const randomnumber = getRandomInt(100);
+  const randomnumber = getRandomInt(10);
   const ynanswer = isNumberIsEven(randomnumber);
   const answer = readlineSync.question(`Question: ${randomnumber}\nYour answer: `);
   if (answer === ynanswer) {
@@ -14,8 +14,8 @@ function makeResult() {
 }
 
 export function makeCalc() {
-  const randomnumber1 = getRandomInt(100);
-  const randomnumber2 = getRandomInt(100);
+  const randomnumber1 = getRandomInt(10);
+  const randomnumber2 = getRandomInt(10);
   const mathexpression = getRandomElement();
   const ynanswer = resultOfExpression(randomnumber1, randomnumber2, mathexpression);
   const answer = readlineSync.question(`Question: ${randomnumber1} ${mathexpression} ${randomnumber2}\nYour answer: `);
