@@ -16,7 +16,7 @@ function makeResult() {
 export function makeCalc() {
   const randomnumber1 = getRandomInt(100);
   const randomnumber2 = getRandomInt(100);
-  const ynanswer = isNumberIsEven(randomnumber);
+  //const ynanswer = isNumberIsEven(randomnumber);
   const answer = readlineSync.question(`Question: ${randomnumber1} '+' ${randomnumber2}\nYour answer: `);
   if (answer === ynanswer) {
     console.log('Correct!');
