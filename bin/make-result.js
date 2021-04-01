@@ -13,10 +13,9 @@ function makeResult() {
   return false;
 }
 
-const randomnumber = getRandomInt(100);
 export function makeCalc() {
   const ynanswer = isNumberIsEven(randomnumber);
-  const answer = readlineSync.question(`Question: ${randomnumber} '+' ${randomnumber}\nYour answer: `);
+  const answer = readlineSync.question(`Question: ${getRandomInt(100)} '+' ${getRandomInt(100)}\nYour answer: `);
   if (answer === ynanswer) {
     console.log('Correct!');
     return true;
