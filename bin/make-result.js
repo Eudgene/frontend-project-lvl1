@@ -19,7 +19,6 @@ export function makeCalc() {
   const mathexpression = getRandomElement();
   const ynanswer = resultOfExpression(randomnumber1, randomnumber2, mathexpression);
   const answer = readlineSync.question(`Question: ${randomnumber1} ${mathexpression} ${randomnumber2}\nYour answer: `);
-  console.log(ynanswer, answer);
   if (answer === String(ynanswer)) {
     console.log('Correct!');
     return true;
