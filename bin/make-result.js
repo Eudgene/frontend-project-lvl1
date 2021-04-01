@@ -1,6 +1,6 @@
 import readlineSync from 'readline-sync';
-import { 
-  getRandomInt, isNumberIsEven, getRandomElement, resultOfExpression 
+import {
+  getRandomInt, isNumberIsEven, getRandomElement, resultOfExpression,
 } from './make-randomnumber.js';
 
 function makeResult() {

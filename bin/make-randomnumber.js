@@ -26,6 +26,6 @@ function resultOfExpression(number1, number2, mexpr) {
   return result;
 }
 
-export { 
-  getRandomInt, isNumberIsEven, getRandomElement, resultOfExpression 
+export {
+  getRandomInt, isNumberIsEven, getRandomElement, resultOfExpression,
 };
