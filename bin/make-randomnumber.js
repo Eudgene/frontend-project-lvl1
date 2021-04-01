@@ -4,7 +4,7 @@ function getRandomInt(max) {
 
 function getRandomElement() {
   var elements = ['+', '-', '*'];
-  return elements[Math.floor(Math.random() * arr.length)];
+  return elements[Math.floor(Math.random() * elements.length)];
 }
 
 function isNumberIsEven(number) {
