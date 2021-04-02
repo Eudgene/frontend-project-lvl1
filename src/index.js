@@ -1,4 +1,4 @@
-import getnameOfUser from '..bin/get-name.js';
+import getnameOfUser from '../bin/get-name.js';
 
 function Engine(answerFirst, functionToRezult) {
   console.log('Welcome to the Brain Games!');
