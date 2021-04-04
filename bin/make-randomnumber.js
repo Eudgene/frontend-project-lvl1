@@ -46,5 +46,5 @@ function makeGcdNumber(number1, number2) {
 }
 
 export {
-  getRandomInt, isNumberIsEven, getRandomElement, resultOfExpression, makeGcdNumber
+  getRandomInt, isNumberIsEven, getRandomElement, resultOfExpression, makeGcdNumber,
 };
