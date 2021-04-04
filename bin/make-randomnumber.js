@@ -28,20 +28,14 @@ function resultOfExpression(number1, number2, mexpr) {
 
 function makeGcdNumber(number1, number2) {
   let result = 0;
-  /*if (number1 % number2 === 0) {
-    result = number2;
-  } else if (number2 % number1 === 0) {
-    result = number1;
-  } else {*/
-    for (let del = number1; del >= 0; del -= 1) {
-      if (number1 % del === 0) {
-        if (number2 % del === 0) {
-          result = del;
-          break;
-        }
+  for (let del = number1; del >= 0; del -= 1) {
+    if (number1 % del === 0) {
+      if (number2 % del === 0) {
+        result = del;
+        break;
       }
     }
-  //}
+  }
   return result;
 }
 
