@@ -19,7 +19,8 @@
   "type": "module",
   "games": {
     "brain-even": "games/brain-even.js",
-    "brain-calc": "games/brain-calc.js"
+    "brain-calc": "games/brain-calc.js",
+    "brain-gcd": "games/brain-gcd.js"
   },
   "bin": {
     "brain-games": "bin/brain-games.js"
