@@ -6,7 +6,7 @@ function Engine(answerFirst, functionToRezult) {
   console.log(`Hi, ${nameOfUser}!`);
 
   console.log(answerFirst);*/
-  welcomAndAnswer();
+  welcomAndAnswer(answerFirst);
 
   for (let counter = 0; counter <= 3; counter += 1) {
     if (counter < 3) {
@@ -20,12 +20,12 @@ function Engine(answerFirst, functionToRezult) {
   }
 }
 
-function welcomAndAnswer() {
+function welcomAndAnswer(answerF) {
   console.log('Welcome to the Brain Games!');
   const nameOfUser = getnameOfUser();
   console.log(`Hi, ${nameOfUser}!`);
 
-  console.log(answerFirst);
+  console.log(answerF);
 }
 
 export default Engine;
