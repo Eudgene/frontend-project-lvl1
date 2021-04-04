@@ -35,6 +35,7 @@ function makeGcdNumber(number1, number2) {
   } else {
     for (let del = number1; del >= 0; del -= 1) {
       if (number1 % del === 0) {
+        console.log(del);
         if (number2 % del === 0) {
           result = del;
           break;
