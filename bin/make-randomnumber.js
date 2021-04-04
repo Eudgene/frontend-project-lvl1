@@ -28,11 +28,11 @@ function resultOfExpression(number1, number2, mexpr) {
 
 function makeGcdNumber(number1, number2) {
   let result = 0;
-  if (number1 % number2 === 0) {
+  /*if (number1 % number2 === 0) {
     result = number2;
   } else if (number2 % number1 === 0) {
     result = number1;
-  } else {
+  } else {*/
     for (let del = number1; del >= 0; del -= 1) {
       if (number1 % del === 0) {
         if (number2 % del === 0) {
@@ -41,7 +41,7 @@ function makeGcdNumber(number1, number2) {
         }
       }
     }
-  }
+  //}
   return result;
 }
 
