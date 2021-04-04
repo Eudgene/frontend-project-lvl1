@@ -26,6 +26,17 @@ function resultOfExpression(number1, number2, mexpr) {
   return result;
 }
 
+function makeGcdNumber(number1, number2) {
+  let result = 0;
+  if (number1 % number2 === 0) {
+    result = number2;
+  } else if (number2 % number1 === 0) {
+    result = number1;
+  } else {
+    
+  }
+}
+
 export {
-  getRandomInt, isNumberIsEven, getRandomElement, resultOfExpression,
+  getRandomInt, isNumberIsEven, getRandomElement, resultOfExpression, makeGcdNumber
 };
