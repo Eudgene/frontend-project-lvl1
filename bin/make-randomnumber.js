@@ -42,6 +42,7 @@ function makeGcdNumber(number1, number2) {
       }
     }
   }
+  return result;
 }
 
 export {
