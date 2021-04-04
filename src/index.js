@@ -1,11 +1,6 @@
 import getnameOfUser from '../bin/get-name.js';
 
 function Engine(answerFirst, functionToRezult) {
-  /*console.log('Welcome to the Brain Games!');
-  const nameOfUser = getnameOfUser();
-  console.log(`Hi, ${nameOfUser}!`);
-
-  console.log(answerFirst);*/
   const nameOfUser = getnameOfUser();
   welcomAndAnswer(answerFirst, nameOfUser);
 
@@ -24,7 +19,6 @@ function Engine(answerFirst, functionToRezult) {
 function welcomAndAnswer(answerF, nameOf) {
   console.log('Welcome to the Brain Games!');
   console.log(`Hi, ${nameOf}!`);
-
   console.log(answerF);
 }
 
