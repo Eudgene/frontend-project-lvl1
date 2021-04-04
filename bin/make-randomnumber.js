@@ -33,7 +33,14 @@ function makeGcdNumber(number1, number2) {
   } else if (number2 % number1 === 0) {
     result = number1;
   } else {
-    
+    for (let del = number1; del >= 0; del -= 1) {
+      if (number1 % del === 0) {
+        if (number2 % del === 0) {
+          result = del;
+          break;
+        }
+      }
+    }
   }
 }
 
