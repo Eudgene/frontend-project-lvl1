@@ -1,11 +1,12 @@
 import getnameOfUser from '../bin/get-name.js';
 
 function Engine(answerFirst, functionToRezult) {
-  console.log('Welcome to the Brain Games!');
+  /*console.log('Welcome to the Brain Games!');
   const nameOfUser = getnameOfUser();
   console.log(`Hi, ${nameOfUser}!`);
 
-  console.log(answerFirst);
+  console.log(answerFirst);*/
+  welcomAndAnswer();
 
   for (let counter = 0; counter <= 3; counter += 1) {
     if (counter < 3) {
@@ -17,6 +18,14 @@ function Engine(answerFirst, functionToRezult) {
       console.log(`Congratulations, ${nameOfUser}!`);
     }
   }
+}
+
+function welcomAndAnswer() {
+  console.log('Welcome to the Brain Games!');
+  const nameOfUser = getnameOfUser();
+  console.log(`Hi, ${nameOfUser}!`);
+
+  console.log(answerFirst);
 }
 
 export default Engine;
