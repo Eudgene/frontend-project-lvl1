@@ -42,4 +42,17 @@ export function makeGcd() {
   return false;
 }
 
+export function makeProgression() {
+  const randomnumber1 = getRandomInt(100);
+  const randomnumber2 = getRandomInt(100);
+  const ynanswer = makeGcdNumber(randomnumber1, randomnumber2);
+  const answer = readlineSync.question(`Question: ${randomnumber1} ${randomnumber2}\nYour answer: `);
+  if (answer === String(ynanswer)) {
+    console.log('Correct!');
+    return true;
+  }
+  console.log(`"${answer}" is wrong answer ;(. Correct answer was "${ynanswer}".`);
+  return false;
+}
+
 export default makeResult;
