@@ -41,18 +41,18 @@ function makeGcdNumber(number1, number2) {
 
 function makeProgressionNumber(arr) {
   const randomnumber1 = getRandomInt(10);
-  arr.splice(randomnumber1, 1, '..');
-  return arr[randomnumber1];
+  const newArr = arr.splice(randomnumber1, 1, '..');
+  return newArr[randomnumber1];
 }
 
 function makeProgressionArray() {
   const randomnumber1 = getRandomInt(10);
   const randomnumber2 = getRandomInt(10);
   const arr = [];
-  console.log(randomnumber1);
-  console.log(randomnumber1 + randomnumber2);
+  arr.push(randomnumber1);
+  arr.push(randomnumber1 + randomnumber2);
   for (let i = 1; i <= 8; i += 1) {
-    console.log(arr[i-1] + arr[i]);
+    arr.push(arr[i-1] + arr[i]);
   }
   return arr;
 }
