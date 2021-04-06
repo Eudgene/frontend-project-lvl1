@@ -1,6 +1,6 @@
 import readlineSync from 'readline-sync';
 import {
-  getRandomInt, isNumberIsEven, getRandomElement, resultOfExpression, makeGcdNumber,
+  getRandomInt, isNumberIsEven, getRandomElement, resultOfExpression, makeGcdNumber, makeProgressionNumber, makeProgressionArray,
 } from './make-randomnumber.js';
 
 function makeResult() {
@@ -43,10 +43,9 @@ export function makeGcd() {
 }
 
 export function makeProgression() {
-  const randomnumber1 = getRandomInt(100);
-  const randomnumber2 = getRandomInt(100);
-  const ynanswer = makeGcdNumber(randomnumber1, randomnumber2);
-  const answer = readlineSync.question(`Question: ${randomnumber1} ${randomnumber2}\nYour answer: `);
+  const arr = makeProgressionArray;
+  const ynanswer = makeProgressionNumber(arr);
+  const answer = readlineSync.question(`Question: ${arr} `);
   if (answer === String(ynanswer)) {
     console.log('Correct!');
     return true;
