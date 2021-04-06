@@ -41,7 +41,7 @@ function makeGcdNumber(number1, number2) {
 
 function makeProgressionNumber(arr) {
   const randomnumber1 = getRandomInt(10);
-  arr.slice(randomnumber1, 1, '..');
+  arr.splice(randomnumber1, 1, '..');
   return arr[randomnumber1];
 }
 
