@@ -1,6 +1,7 @@
 import readlineSync from 'readline-sync';
 import {
-  getRandomInt, isNumberIsEven, getRandomElement, resultOfExpression, makeGcdNumber, makeProgressionNumber, makeProgressionArray,
+  getRandomInt, isNumberIsEven, getRandomElement, resultOfExpression, makeGcdNumber,
+  makeProgressionNumber, makeProgressionArray, makeProgressionNewArray,
 } from './make-randomnumber.js';
 
 function makeResult() {
