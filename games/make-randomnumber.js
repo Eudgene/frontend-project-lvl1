@@ -45,7 +45,7 @@ function makeProgressionNumber(arr) {
   for (let i = 0; i <= arr.length; i += 1) {
     if (i === randomnumber1) {
       result = arr[i];
-    } 
+    }
   }
   return result;
 }
@@ -74,7 +74,7 @@ function makeProgressionArray() {
     } else if (i === 1) {
       arr.push(randomnumber2);
     } else {
-      arr.push(arr[i-1] + arr[i-2]);
+      arr.push(arr[i - 1] + arr[i - 2]);
     }
   }
   return arr;
