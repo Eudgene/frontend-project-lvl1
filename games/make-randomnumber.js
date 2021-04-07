@@ -45,10 +45,7 @@ function makeProgressionNumber(arr) {
   for (let i = 0; i <= arr.length; i += 1) {
     if (i === randomnumber1) {
       result = arr[i];
-      console.log('..');
-    } else {
-      console.log(arr[i]);
-    }
+    } 
   }
   return result;
 }
