@@ -54,7 +54,7 @@ function makeProgressionNumber(arr) {
 }
 
 function makeProgressionArray() {
-  const randomnumber1 = getRandomInt(3);
+  const randomnumber1 = getRandomInt(1);
   const randomnumber2 = getRandomInt(5);
   const arr = [];
   for (let i = 0; i <= 9; i += 1) {
