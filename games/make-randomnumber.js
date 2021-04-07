@@ -50,13 +50,13 @@ function makeProgressionNumber(arr) {
 }
 
 function makeProgressionArray() {
-  const randomnumber1 = getRandomInt(4);
+  const randomnumber1 = getRandomInt(10);
   const randomnumber2 = getRandomInt(4);
   const arr = [];
   arr.push(randomnumber1);
   arr.push(randomnumber1 + randomnumber2);
   for (let i = 1; i <= 8; i += 1) {
-    if (i === randomnumber1 - 1) {
+    if (i === randomnumber1) {
       arr.push('..');
     }
     arr.push(arr[i-1] + arr[i]);
