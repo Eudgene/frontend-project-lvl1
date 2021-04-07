@@ -40,9 +40,13 @@ function makeGcdNumber(number1, number2) {
 }
 
 function makeProgressionNumber(arr) {
-  const randomnumber1 = getRandomInt(10);
-  const newArr = arr.splice(randomnumber1, 1, '..');
-  return newArr[randomnumber1];
+  let result = 0;
+  for (let i = 1; i <= arr.length; i += 1) {
+    if (arr[i] === '..') {
+      result = arr[i - 1] + arr[i - 2];
+    }
+  }
+  return result;
 }
 
 function makeProgressionArray() {
@@ -52,6 +56,9 @@ function makeProgressionArray() {
   arr.push(randomnumber1);
   arr.push(randomnumber1 + randomnumber2);
   for (let i = 1; i <= 8; i += 1) {
+    if (arr[i] === randomnumber1 - 1) {
+      arr.push('..');
+    }
     arr.push(arr[i-1] + arr[i]);
   }
   return arr;
