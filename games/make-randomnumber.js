@@ -56,6 +56,7 @@ function makeProgressionNewArray(arr, answer) {
   for (let i = 0; i <= arr.length; i += 1) {
     if (arr[i] === answer && count === 0) {
       newArr.push('..');
+      count += 1;
     } else {
       newArr.push(arr[i]);
     }
