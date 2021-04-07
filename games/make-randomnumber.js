@@ -50,6 +50,18 @@ function makeProgressionNumber(arr) {
   return result;
 }
 
+function makeProgressionNewArray(arr, answer) {
+  const newArr = [];
+  for (let i = 0; i <= arr.length; i += 1) {
+    if (arr[i] === answer) {
+      newArr.push('..');
+    } else {
+      newArr.push(arr[i]);
+    }
+  }
+  return newArr;
+}
+
 function makeProgressionArray() {
   const randomnumber1 = getRandomInt(1);
   const randomnumber2 = getRandomInt(5);
@@ -67,5 +79,6 @@ function makeProgressionArray() {
 }
 
 export {
-  getRandomInt, isNumberIsEven, getRandomElement, resultOfExpression, makeGcdNumber, makeProgressionNumber, makeProgressionArray,
+  getRandomInt, isNumberIsEven, getRandomElement, resultOfExpression, makeGcdNumber,
+  makeProgressionNumber, makeProgressionArray, makeProgressionNewArray,
 };
