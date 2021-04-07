@@ -51,12 +51,13 @@ function makeProgressionNumber(arr) {
 
 function makeProgressionArray() {
   const randomnumber1 = getRandomInt(9);
+  const randomnumber2 = getRandomInt(4);
   const arr = [];
   for (let i = 0; i <= 9; i += 1) {
-    if (i <= 1 && i !== randomnumber1) {
-      arr.push(getRandomInt(4));
-    } else if (i === randomnumber1) {
-      arr.push('..');
+    if (i === 0) {
+      arr.push(randomnumber1);
+    } else if (i === 1) {
+      arr.push(randomnumber2);
     } else {
       arr.push(arr[i-1] + arr[i]);
     }
