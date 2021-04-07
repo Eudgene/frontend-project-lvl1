@@ -9,7 +9,7 @@ import getnameOfUser from '../games/get-name.js';
 function Engine(answerFirst, functionToRezult) {
   console.log('Welcome to the Brain Games!');
   const nameOfUser = getnameOfUser();
-  console.log(`Hi, ${nameOf}!`);
+  console.log(`Hi, ${nameOfUser}!`);
   
   //welcomAndAnswer(answerFirst, nameOfUser);
 
