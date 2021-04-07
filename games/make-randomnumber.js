@@ -66,10 +66,9 @@ function makeProgressionNewArray(arr, answer) {
 
 function makeProgressionArray() {
   const randomnumber1 = getRandomInt(1);
-  let randomnumber2 = getRandomInt(5);
-  if (randomnumber2 === 0) {
-    randomnumber2 = getRandomInt(5);
-  }
+  do {
+    let randomnumber2 = getRandomInt(5);
+  } while (randomnumber2 !== 0)
   const arr = [];
   for (let i = 0; i <= 9; i += 1) {
     if (i === 0) {
