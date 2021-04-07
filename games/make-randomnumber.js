@@ -58,8 +58,9 @@ function makeProgressionArray() {
   for (let i = 1; i <= 8; i += 1) {
     if (i === randomnumber1) {
       arr.push('..');
+    } else {
+      arr.push(arr[i-1] + arr[i]);
     }
-    arr.push(arr[i-1] + arr[i]);
   }
   return arr;
 }
