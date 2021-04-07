@@ -45,7 +45,7 @@ export function makeGcd() {
 export function makeProgression() {
   const arr = makeProgressionArray();
   const ynanswer = makeProgressionNumber(arr);
-  const answer = readlineSync.question(`Question: ${makeProgressionArray()} `);
+  const answer = readlineSync.question(`Question: ${arr} `);
   if (answer === String(ynanswer)) {
     console.log('Correct!');
     return true;
