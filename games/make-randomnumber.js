@@ -40,10 +40,14 @@ function makeGcdNumber(number1, number2) {
 }
 
 function makeProgressionNumber(arr) {
+  const randomnumber1 = getRandomInt(9);
   let result = 0;
-  for (let i = 1; i <= arr.length; i += 1) {
-    if (arr[i] === '..') {
-      result = arr[i - 1] + arr[i - 2];
+  for (let i = 0; i <= arr.length; i += 1) {
+    if (i === randomnumber1) {
+      result = arr[i];
+      console.log('..');
+    } else {
+      console.log(arr[i]);
     }
   }
   return result;
