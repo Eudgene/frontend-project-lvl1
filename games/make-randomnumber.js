@@ -89,9 +89,9 @@ function makePrimeNumber(num) {
     }
   }
   if (arr.length === 2) {
-    result = "yes";
+    result = 'yes';
   } else {
-    result = "no";
+    result = 'no';
   }
   return result;
 }
