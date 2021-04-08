@@ -1,10 +1,9 @@
 import readlineSync from 'readline-sync';
 import {
-  getRandomInt,
-  makeProgressionNumber, makeProgressionArray, makeProgressionNewArray, makePrimeNumber,
+  getRandomInt, makePrimeNumber,
 } from './make-randomnumber.js';
 
-export function makeProgression() {
+/*export function makeProgression() {
   const arr = makeProgressionArray();
   const ynanswer = makeProgressionNumber(arr);
   const newArr = makeProgressionNewArray(arr, ynanswer);
@@ -15,7 +14,7 @@ export function makeProgression() {
   }
   console.log(`"${answer}" is wrong answer ;(. Correct answer was "${ynanswer}".`);
   return false;
-}
+}*/
 
 export function makePrime() {
   const randomnumber1 = getRandomInt(2, 100);

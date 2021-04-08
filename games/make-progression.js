@@ -1,8 +1,6 @@
-function getRandomInt(min, max) {
-  return Math.floor(Math.random() * (max - min + 1)) + min;
-}
+import readlineSync from 'readline-sync';
 
-/*function makeProgressionNumber(arr) {
+function makeProgressionNumber(arr) {
   const randomnumber1 = getRandomInt(0, 9);
   let result = 0;
   for (let i = 0; i <= arr.length; i += 1) {
@@ -12,7 +10,7 @@ function getRandomInt(min, max) {
   }
   return result;
 }
-
+  
 function makeProgressionNewArray(arr, answer) {
   const newArr = [];
   let count = 0;
@@ -26,7 +24,7 @@ function makeProgressionNewArray(arr, answer) {
   }
   return newArr;
 }
-
+  
 function makeProgressionArray() {
   const randomnumber1 = getRandomInt(0, 3);
   const randomnumber2 = getRandomInt(3, 7);
@@ -41,25 +39,17 @@ function makeProgressionArray() {
     }
   }
   return arr;
-}*/
-
-function makePrimeNumber(num) {
-  const arr = [];
-  let result = 0;
-  for (let i = 1; i <= num; i += 1) {
-    if (num % i === 0) {
-      arr.push(i);
-    }
-  }
-  if (arr.length === 2) {
-    result = 'yes';
-  } else {
-    result = 'no';
-  }
-  return result;
 }
 
-export {
-  getRandomInt,
-  makePrimeNumber,
-};
+export function makeProgression() {
+  const arr = makeProgressionArray();
+  const ynanswer = makeProgressionNumber(arr);
+  const newArr = makeProgressionNewArray(arr, ynanswer);
+  const answer = readlineSync.question(`Question: ${newArr.join(' ')} \nYour answer: `);
+  if (answer === String(ynanswer)) {
+    console.log('Correct!');
+    return true;
+  }
+  console.log(`"${answer}" is wrong answer ;(. Correct answer was "${ynanswer}".`);
+  return false;
+}
