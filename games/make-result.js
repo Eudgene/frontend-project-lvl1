@@ -59,7 +59,6 @@ export function makeProgression() {
 export function makePrime() {
   const randomnumber1 = getRandomInt(0, 100);
   const ynanswer = makePrimeNumber(randomnumber1);
-  const newArr = makeProgressionNewArray(arr, ynanswer);
   const answer = readlineSync.question(`Question: ${randomnumber1} `);
   if (answer === String(ynanswer)) {
     console.log('Correct!');
