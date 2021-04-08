@@ -90,6 +90,6 @@ function makePrimeNumber(num) {
 }
 
 export {
-  getRandomInt, isNumberIsEven, getRandomElement, resultOfExpression, makeGcdNumber,
+  getRandomInt, getRandomElement, resultOfExpression, makeGcdNumber,
   makeProgressionNumber, makeProgressionArray, makeProgressionNewArray, makePrimeNumber,
 };
