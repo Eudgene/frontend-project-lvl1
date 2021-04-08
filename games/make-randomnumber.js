@@ -80,7 +80,23 @@ function makeProgressionArray() {
   return arr;
 }
 
+function makePrimeNumber(num) {
+  const arr = [];
+  let result = 0;
+  for (let i = 1; i <= num; i += 1) {
+    if (num % i === 0) {
+      arr.push(i);
+    }
+  }
+  if (arr.length === 1) {
+    result = "yes";
+  } else {
+    result = "no";
+  }
+  return result;
+}
+
 export {
   getRandomInt, isNumberIsEven, getRandomElement, resultOfExpression, makeGcdNumber,
-  makeProgressionNumber, makeProgressionArray, makeProgressionNewArray,
+  makeProgressionNumber, makeProgressionArray, makeProgressionNewArray, makePrimeNumber,
 };
