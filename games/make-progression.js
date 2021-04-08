@@ -1,4 +1,5 @@
 import readlineSync from 'readline-sync';
+import { getRandomInt } from './make-randomnumber.js';
 
 function makeProgressionNumber(arr) {
   const randomnumber1 = getRandomInt(0, 9);
