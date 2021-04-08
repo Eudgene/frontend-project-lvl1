@@ -1,7 +1,7 @@
 import readlineSync from 'readline-sync';
 import {
   getRandomInt, isNumberIsEven, getRandomElement, resultOfExpression, makeGcdNumber,
-  makeProgressionNumber, makeProgressionArray, makeProgressionNewArray,
+  makeProgressionNumber, makeProgressionArray, makeProgressionNewArray, makePrimeNumber,
 } from './make-randomnumber.js';
 
 function makeResult() {
@@ -48,6 +48,19 @@ export function makeProgression() {
   const ynanswer = makeProgressionNumber(arr);
   const newArr = makeProgressionNewArray(arr, ynanswer);
   const answer = readlineSync.question(`Question: ${newArr.join(' ')} `);
+  if (answer === String(ynanswer)) {
+    console.log('Correct!');
+    return true;
+  }
+  console.log(`"${answer}" is wrong answer ;(. Correct answer was "${ynanswer}".`);
+  return false;
+}
+
+export function makePrime() {
+  const randomnumber1 = getRandomInt(0, 100);
+  const ynanswer = makePrimeNumber(randomnumber1);
+  const newArr = makeProgressionNewArray(arr, ynanswer);
+  const answer = readlineSync.question(`Question: ${randomnumber1} `);
   if (answer === String(ynanswer)) {
     console.log('Correct!');
     return true;
