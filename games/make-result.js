@@ -4,18 +4,6 @@ import {
   makeProgressionNumber, makeProgressionArray, makeProgressionNewArray, makePrimeNumber,
 } from './make-randomnumber.js';
 
-/*function makeResult() {
-  const randomnumber = getRandomInt(0, 10);
-  const ynanswer = isNumberIsEven(randomnumber);
-  const answer = readlineSync.question(`Question: ${randomnumber}\nYour answer: `);
-  if (answer === ynanswer) {
-    console.log('Correct!');
-    return true;
-  }
-  console.log(`"${answer}" is wrong answer ;(. Correct answer was "${ynanswer}".`);
-  return false;
-}*/
-
 export function makeCalc() {
   const randomnumber1 = getRandomInt(0, 10);
   const randomnumber2 = getRandomInt(0, 10);
@@ -67,5 +55,3 @@ export function makePrime() {
   console.log(`"${answer}" is wrong answer ;(. Correct answer was "${ynanswer}".`);
   return false;
 }
-
-//export default makeResult;

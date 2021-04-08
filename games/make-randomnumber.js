@@ -7,13 +7,6 @@ function getRandomElement() {
   return elements[Math.floor(Math.random() * elements.length)];
 }
 
-function isNumberIsEven(number) {
-  if (number % 2 === 0) {
-    return 'yes';
-  }
-  return 'no';
-}
-
 function resultOfExpression(number1, number2, mexpr) {
   let result = 0;
   if (mexpr === '+') {
