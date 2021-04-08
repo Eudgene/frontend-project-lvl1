@@ -47,7 +47,7 @@ export function makeProgression() {
   const arr = makeProgressionArray();
   const ynanswer = makeProgressionNumber(arr);
   const newArr = makeProgressionNewArray(arr, ynanswer);
-  const answer = readlineSync.question(`Question: ${newArr.join(' ')} \n Your answer:`);
+  const answer = readlineSync.question(`Question: ${newArr.join(' ')} \nYour answer: `);
   if (answer === String(ynanswer)) {
     console.log('Correct!');
     return true;
@@ -59,7 +59,7 @@ export function makeProgression() {
 export function makePrime() {
   const randomnumber1 = getRandomInt(2, 100);
   const ynanswer = makePrimeNumber(randomnumber1);
-  const answer = readlineSync.question(`Question: ${randomnumber1} \n Your answer:`);
+  const answer = readlineSync.question(`Question: ${randomnumber1} \nYour answer:`);
   if (answer === String(ynanswer)) {
     console.log('Correct!');
     return true;
