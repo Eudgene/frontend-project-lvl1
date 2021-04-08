@@ -2,7 +2,7 @@ function getRandomInt(min, max) {
   return Math.floor(Math.random() * (max - min + 1)) + min;
 }
 
-function getRandomElement() {
+/*function getRandomElement() {
   const elements = ['+', '-', '*'];
   return elements[Math.floor(Math.random() * elements.length)];
 }
@@ -17,7 +17,7 @@ function resultOfExpression(number1, number2, mexpr) {
     result = number1 * number2;
   }
   return result;
-}
+}*/
 
 function makeGcdNumber(number1, number2) {
   let result = 0;
@@ -90,6 +90,6 @@ function makePrimeNumber(num) {
 }
 
 export {
-  getRandomInt, getRandomElement, resultOfExpression, makeGcdNumber,
+  getRandomInt, makeGcdNumber,
   makeProgressionNumber, makeProgressionArray, makeProgressionNewArray, makePrimeNumber,
 };

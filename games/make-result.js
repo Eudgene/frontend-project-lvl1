@@ -1,10 +1,10 @@
 import readlineSync from 'readline-sync';
 import {
-  getRandomInt, getRandomElement, resultOfExpression, makeGcdNumber,
+  getRandomInt, makeGcdNumber,
   makeProgressionNumber, makeProgressionArray, makeProgressionNewArray, makePrimeNumber,
 } from './make-randomnumber.js';
 
-export function makeCalc() {
+/*export function makeCalc() {
   const randomnumber1 = getRandomInt(0, 10);
   const randomnumber2 = getRandomInt(0, 10);
   const mathexpression = getRandomElement();
@@ -16,7 +16,7 @@ export function makeCalc() {
   }
   console.log(`"${answer}" is wrong answer ;(. Correct answer was "${ynanswer}".`);
   return false;
-}
+}*/
 
 export function makeGcd() {
   const randomnumber1 = getRandomInt(0, 100);
