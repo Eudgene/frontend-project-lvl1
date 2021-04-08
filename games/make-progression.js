@@ -1,5 +1,5 @@
 import readlineSync from 'readline-sync';
-import { getRandomInt } from './make-randomnumber.js';
+import getRandomInt from './make-randomnumber.js';
 
 function makeProgressionNumber(arr) {
   const randomnumber1 = getRandomInt(0, 9);
@@ -11,7 +11,7 @@ function makeProgressionNumber(arr) {
   }
   return result;
 }
-  
+
 function makeProgressionNewArray(arr, answer) {
   const newArr = [];
   let count = 0;
@@ -25,7 +25,7 @@ function makeProgressionNewArray(arr, answer) {
   }
   return newArr;
 }
-  
+
 function makeProgressionArray() {
   const randomnumber1 = getRandomInt(0, 3);
   const randomnumber2 = getRandomInt(3, 7);
@@ -42,7 +42,7 @@ function makeProgressionArray() {
   return arr;
 }
 
-export function makeProgression() {
+function makeProgression() {
   const arr = makeProgressionArray();
   const ynanswer = makeProgressionNumber(arr);
   const newArr = makeProgressionNewArray(arr, ynanswer);
@@ -54,3 +54,5 @@ export function makeProgression() {
   console.log(`"${answer}" is wrong answer ;(. Correct answer was "${ynanswer}".`);
   return false;
 }
+
+export default makeProgression;

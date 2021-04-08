@@ -1,5 +1,5 @@
 import readlineSync from 'readline-sync';
-import { getRandomInt } from './make-randomnumber.js';
+import getRandomInt from './make-randomnumber.js';
 
 function isNumberIsEven(number) {
   if (number % 2 === 0) {
