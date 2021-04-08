@@ -17,7 +17,7 @@ function makePrimeNumber(num) {
   return result;
 }
 
-export function makePrime() {
+function makePrime() {
   const randomnumber1 = getRandomInt(2, 100);
   const ynanswer = makePrimeNumber(randomnumber1);
   const answer = readlineSync.question(`Question: ${randomnumber1} \nYour answer: `);
@@ -28,3 +28,5 @@ export function makePrime() {
   console.log(`"${answer}" is wrong answer ;(. Correct answer was "${ynanswer}".`);
   return false;
 }
+
+export default makePrime;

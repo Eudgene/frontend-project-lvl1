@@ -14,7 +14,7 @@ function makeGcdNumber(number1, number2) {
   return result;
 }
 
-export function makeGcd() {
+function makeGcd() {
   const randomnumber1 = getRandomInt(0, 100);
   const randomnumber2 = getRandomInt(0, 100);
   const ynanswer = makeGcdNumber(randomnumber1, randomnumber2);
@@ -26,3 +26,5 @@ export function makeGcd() {
   console.log(`"${answer}" is wrong answer ;(. Correct answer was "${ynanswer}".`);
   return false;
 }
+
+export default makeGcd;

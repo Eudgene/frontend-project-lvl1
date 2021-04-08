@@ -18,7 +18,7 @@ function resultOfExpression(number1, number2, mexpr) {
   return result;
 }
 
-export function makeCalc() {
+function makeCalc() {
   const randomnumber1 = getRandomInt(0, 10);
   const randomnumber2 = getRandomInt(0, 10);
   const mathexpression = getRandomElement();
@@ -31,3 +31,5 @@ export function makeCalc() {
   console.log(`"${answer}" is wrong answer ;(. Correct answer was "${ynanswer}".`);
   return false;
 }
+
+export default makeCalc;
