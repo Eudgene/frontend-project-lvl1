@@ -2,24 +2,7 @@ function getRandomInt(min, max) {
   return Math.floor(Math.random() * (max - min + 1)) + min;
 }
 
-/*function getRandomElement() {
-  const elements = ['+', '-', '*'];
-  return elements[Math.floor(Math.random() * elements.length)];
-}
-
-function resultOfExpression(number1, number2, mexpr) {
-  let result = 0;
-  if (mexpr === '+') {
-    result = number1 + number2;
-  } else if (mexpr === '-') {
-    result = number1 - number2;
-  } else {
-    result = number1 * number2;
-  }
-  return result;
-}*/
-
-function makeGcdNumber(number1, number2) {
+/*function makeGcdNumber(number1, number2) {
   let result = 0;
   for (let del = number1; del >= 0; del -= 1) {
     if (number1 % del === 0) {
@@ -30,7 +13,7 @@ function makeGcdNumber(number1, number2) {
     }
   }
   return result;
-}
+}*/
 
 function makeProgressionNumber(arr) {
   const randomnumber1 = getRandomInt(0, 9);
@@ -90,6 +73,6 @@ function makePrimeNumber(num) {
 }
 
 export {
-  getRandomInt, makeGcdNumber,
+  getRandomInt,
   makeProgressionNumber, makeProgressionArray, makeProgressionNewArray, makePrimeNumber,
 };
