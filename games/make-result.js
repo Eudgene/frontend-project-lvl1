@@ -57,7 +57,7 @@ export function makeProgression() {
 }
 
 export function makePrime() {
-  const randomnumber1 = getRandomInt(0, 100);
+  const randomnumber1 = getRandomInt(2, 100);
   const ynanswer = makePrimeNumber(randomnumber1);
   const answer = readlineSync.question(`Question: ${randomnumber1} `);
   if (answer === String(ynanswer)) {
