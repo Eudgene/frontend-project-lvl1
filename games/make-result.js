@@ -1,10 +1,10 @@
 import readlineSync from 'readline-sync';
 import {
-  getRandomInt, isNumberIsEven, getRandomElement, resultOfExpression, makeGcdNumber,
+  getRandomInt, getRandomElement, resultOfExpression, makeGcdNumber,
   makeProgressionNumber, makeProgressionArray, makeProgressionNewArray, makePrimeNumber,
 } from './make-randomnumber.js';
 
-function makeResult() {
+/*function makeResult() {
   const randomnumber = getRandomInt(0, 10);
   const ynanswer = isNumberIsEven(randomnumber);
   const answer = readlineSync.question(`Question: ${randomnumber}\nYour answer: `);
@@ -14,7 +14,7 @@ function makeResult() {
   }
   console.log(`"${answer}" is wrong answer ;(. Correct answer was "${ynanswer}".`);
   return false;
-}
+}*/
 
 export function makeCalc() {
   const randomnumber1 = getRandomInt(0, 10);
@@ -68,4 +68,4 @@ export function makePrime() {
   return false;
 }
 
-export default makeResult;
+//export default makeResult;

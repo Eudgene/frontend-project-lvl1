@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 
-import makeResult from '../games/make-result.js';
+import makeResult from '../games/check-even';
 import Engine from '../src/index.js';
 
 const answer = 'Answer "yes" if the number is even, otherwise answer "no".';
