@@ -88,7 +88,7 @@ function makePrimeNumber(num) {
       arr.push(i);
     }
   }
-  if (arr.length === 1) {
+  if (arr.length === 2) {
     result = "yes";
   } else {
     result = "no";
