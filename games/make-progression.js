@@ -1,7 +1,6 @@
 import readlineSync from 'readline-sync';
 import getRandomInt from './make-randomnumber.js';
 
-
 function makeProgressionNumber(arr) {
   const randomnumber1 = getRandomInt(0, 9);
   let result = 0;
@@ -47,7 +46,7 @@ function makeProgression() {
   const arr = makeProgressionArray();
   const ynanswer = makeProgressionNumber(arr);
   const newArr = makeProgressionNewArray(arr, ynanswer);
-  const answer = readlineSync.question(`Question: ${newArr.map((item) => console.log(item))} \nYour answer: `);
+  const answer = readlineSync.question(`Question: ${newArr.join(' ')} \nYour answer: `);
   if (answer === String(ynanswer)) {
     console.log('Correct!');
     return true;
