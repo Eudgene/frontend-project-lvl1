@@ -46,7 +46,9 @@ function makeProgression() {
   const arr = makeProgressionArray();
   const ynanswer = makeProgressionNumber(arr);
   const newArr = makeProgressionNewArray(arr, ynanswer);
+  console.log(typeof ynanswer);
   const answer = readlineSync.question(`Question: ${newArr.join(' ')} \nYour answer: `);
+  console.log(typeof answer);
   if (answer === String(ynanswer)) {
     console.log('Correct!');
     return true;
