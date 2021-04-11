@@ -20,7 +20,7 @@ function makeProgressionNewArray(arr, answer) {
       newArr.push('..');
       count += 1;
     } else {
-      newArr.push(arr[i]);
+      newArr.push(String(arr[i]));
     }
   }
   return newArr;
