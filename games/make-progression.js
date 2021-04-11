@@ -6,7 +6,7 @@ function makeProgressionNumber(arr) {
   let result = 0;
   for (let i = 0; i <= arr.length; i += 1) {
     if (i === randomnumber1) {
-      result = arr[i];
+      result = String(arr[i]);
     }
   }
   return result;
