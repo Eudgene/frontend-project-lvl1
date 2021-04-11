@@ -33,10 +33,8 @@ function makeProgressionArray() {
   for (let i = 0; i <= 9; i += 1) {
     if (i === 0) {
       arr.push(randomnumber1);
-    } else if (i === 1) {
-      arr.push(randomnumber2);
     } else {
-      arr.push(arr[i - 1] + arr[i - 2]);
+      arr.push(arr[i - 1] + randomnumber2);
     }
   }
   return arr;
@@ -46,9 +44,7 @@ function makeProgression() {
   const arr = makeProgressionArray();
   const ynanswer = makeProgressionNumber(arr);
   const newArr = makeProgressionNewArray(arr, ynanswer);
-  console.log(typeof ynanswer);
   const answer = readlineSync.question(`Question: ${newArr.join(' ')} \nYour answer: `);
-  console.log(typeof answer);
   if (answer === String(ynanswer)) {
     console.log('Correct!');
     return true;
